@@ -326,6 +326,215 @@ export {
 	Theme,
 	type ThemeColor,
 } from "./modes/interactive/theme/theme.js";
+export type {
+	CreatePpprCapabilityProvidersOptions,
+	PpprCapabilityProviders,
+	PpprCommandProvider,
+	PpprContentProvider,
+	PpprLogProvider,
+	PpprModelProvider,
+	PpprSessionPersistenceProvider,
+} from "./pppr/capability-providers.js";
+export { createPpprCapabilityProviders } from "./pppr/capability-providers.js";
+export type {
+	CreateLocalPpprCliEffectHostOptions,
+	CreatePpprCliEffectFulfillmentHostOptions,
+	PpprCliCommandProvider,
+	PpprCliContentProvider,
+	PpprCliEffectFulfillmentHost,
+	PpprCliLogProvider,
+	PpprCliModelProvider,
+	PpprCliSessionPersistenceProvider,
+} from "./pppr/cli-effect-fulfillment.js";
+export {
+	createLocalPpprCliEffectHost,
+	createPpprCliEffectFulfillmentHost,
+	createPpprLogAppendEffectRequest,
+	createPpprLogResolveEffectRequest,
+	createPpprSessionPersistEffectRequest,
+	fulfillPpprEffectRequest,
+	mapPpprCliToolCallToEffectRequest,
+	PPPR_CLI_TOOL_SEMANTICS,
+	PPPR_CLI_TOOL_TO_EFFECT_KIND,
+} from "./pppr/cli-effect-fulfillment.js";
+export type {
+	CreatePpprCliHostStateOptions,
+	CreatePpprForkSessionActionOptions,
+	PpprCliCancelRunAction,
+	PpprCliDeliverEffectResultAction,
+	PpprCliHostBoundary,
+	PpprCliHostDispatchResult,
+	PpprCliHostResponsibility,
+	PpprCliHostRuntimeView,
+	PpprCliHostState,
+	PpprCliResumeSessionAction,
+	PpprCliSessionAction,
+	PpprCliStartSessionAction,
+	PpprCliSubmitPromptAction,
+	PpprRuntimeResponsibility,
+} from "./pppr/cli-host.js";
+export {
+	createPpprCliHostState,
+	createPpprForkSessionAction,
+	dispatchPpprCliHostAction,
+	getPpprCliHostRuntimeView,
+	mapPpprCliActionToInputEvent,
+	PPPR_CLI_ACTION_TO_INPUT_KIND,
+	PPPR_CLI_HOST_BOUNDARY,
+	PPPR_CLI_HOST_DRIVER_MODULE,
+	PPPR_CLI_HOST_RESPONSIBILITIES,
+	PPPR_RUNTIME_RESPONSIBILITIES,
+} from "./pppr/cli-host.js";
+export { renderPpprAssistantSegments, renderPpprOutputEvent, renderPpprOutputEvents } from "./pppr/cli-render.js";
+export { PpprEffectDeniedError, PpprEffectFailureError } from "./pppr/effect-errors.js";
+export type {
+	PpprEffectPolicyDecision,
+	PpprEffectPolicyDecisionType,
+	PpprEffectPolicyEvaluator,
+} from "./pppr/effect-policy.js";
+export {
+	createPpprEffectPolicyDecision,
+	createPpprPolicyDecisionError,
+	createPpprPolicyMetadata,
+	evaluatePpprEffectPolicy,
+} from "./pppr/effect-policy.js";
+export type {
+	CreateLocalPpprCapabilityProvidersOptions,
+	PpprStructuredPatchDocument,
+} from "./pppr/local-capability-providers.js";
+export {
+	createInMemoryPpprLogProvider,
+	createInMemoryPpprSessionPersistenceProvider,
+	createLocalPpprCapabilityProviders,
+	createLocalPpprCommandProvider,
+	createLocalPpprContentProvider,
+	createPpprStructuredPatchDocument,
+} from "./pppr/local-capability-providers.js";
+export type {
+	CreatePpprProofHostRemoteInvocationOptions,
+	CreatePpprProofHostStateOptions,
+	ExecutePpprProofHostInvocationOptions,
+	PpprProofHostBoundary,
+	PpprProofHostCancelInvocation,
+	PpprProofHostCapabilityBinding,
+	PpprProofHostEffectResultInvocation,
+	PpprProofHostExecutionAddress,
+	PpprProofHostExecutionEnvironment,
+	PpprProofHostExecutionResult,
+	PpprProofHostHostOwnedResourceArea,
+	PpprProofHostInvocation,
+	PpprProofHostInvocationResult,
+	PpprProofHostModelBinding,
+	PpprProofHostObservabilityBinding,
+	PpprProofHostPersistenceBinding,
+	PpprProofHostPromptInvocation,
+	PpprProofHostRemoteExecutionResult,
+	PpprProofHostRemoteInvocation,
+	PpprProofHostResponsibility,
+	PpprProofHostResumeInvocation,
+	PpprProofHostRuntimeResponsibility,
+	PpprProofHostRuntimeView,
+	PpprProofHostStartInvocation,
+	PpprProofHostState,
+	PpprProofHostWorkspaceBinding,
+} from "./pppr/proof-host.js";
+export {
+	createPpprProofHostExecutionEnvironment,
+	createPpprProofHostRemoteInvocation,
+	createPpprProofHostState,
+	dispatchPpprProofHostInvocation,
+	executePpprProofHostInvocation,
+	executePpprProofHostRemoteInvocation,
+	getPpprProofHostRuntimeView,
+	mapPpprProofHostInvocationToInputEvent,
+	PPPR_PROOF_HOST_BOUNDARY,
+	PPPR_PROOF_HOST_DRIVER_MODULE,
+	PPPR_PROOF_HOST_HOST_OWNED_RESOURCE_AREAS,
+	PPPR_PROOF_HOST_OPERATION_TO_INPUT_KIND,
+	PPPR_PROOF_HOST_RESPONSIBILITIES,
+	PPPR_PROOF_HOST_RUNTIME_RESPONSIBILITIES,
+} from "./pppr/proof-host.js";
+export {
+	advancePpprRuntime,
+	appendPpprAssistantMessage,
+	applyPpprSessionResume,
+	applyPpprSessionStart,
+	cancelPpprRuntime,
+	ingestPpprEffectResult,
+	type PpprRuntimeTransitionResult,
+	requestPpprEffect,
+} from "./pppr/runtime.js";
+// pppr runtime protocol
+export type {
+	PpprArtifactReference,
+	PpprAssistantArtifactRefSegment,
+	PpprAssistantMessagePayload,
+	PpprAssistantSegment,
+	PpprAssistantTextSegment,
+	PpprAssistantThinkingSegment,
+	PpprAssistantToolIntentSegment,
+	PpprContextState,
+	PpprContinuationMode,
+	PpprConversationEntry,
+	PpprEffectKind,
+	PpprEffectOutcome,
+	PpprEffectRequest,
+	PpprEffectRequestPayloadMap,
+	PpprEffectResult,
+	PpprEffectResultPayloadMap,
+	PpprEffectsState,
+	PpprInputEvent,
+	PpprInputEventKind,
+	PpprInputPayloadMap,
+	PpprLifecycleState,
+	PpprLogReference,
+	PpprObservabilityState,
+	PpprOutputEvent,
+	PpprOutputEventKind,
+	PpprOutputPayloadMap,
+	PpprRuntimeState,
+	PpprSessionState,
+	PpprSnapshot,
+	PpprStatusChangeReason,
+	PpprUsageSummary,
+} from "./pppr/runtime-protocol.js";
+export {
+	createPpprCommandExecRequest,
+	createPpprContentPatchRequest,
+	createPpprContentReadRequest,
+	createPpprContentWriteRequest,
+	createPpprEffectRequest,
+	createPpprEffectResult,
+	createPpprInputEvent,
+	createPpprLogAppendRequest,
+	createPpprLogResolveRequest,
+	createPpprModelInferRequest,
+	createPpprOutputEvent,
+	createPpprRuntimeState,
+	createPpprSessionPersistRequest,
+	createPpprSnapshot,
+	restorePpprRuntimeState,
+} from "./pppr/runtime-protocol.js";
+export type {
+	PpprCliBashToolCall,
+	PpprCliEditToolCall,
+	PpprCliEffectRequestOptions,
+	PpprCliReadToolCall,
+	PpprCliToolCall,
+	PpprCliToolName,
+	PpprCliToolSemanticDefinition,
+	PpprCliWriteToolCall,
+} from "./pppr/tool-semantics.js";
+export type {
+	PpprCliVisibleContract,
+	PpprCliVisibleInstructionFile,
+	PpprVisibleToolName,
+} from "./pppr/visible-contract.js";
+export {
+	buildPpprCliVisibleContract,
+	PPPR_DEFAULT_VISIBLE_TOOL_CONTRACT,
+	resolvePpprVisibleToolContract,
+} from "./pppr/visible-contract.js";
 // Clipboard utilities
 export { copyToClipboard } from "./utils/clipboard.js";
 export { parseFrontmatter, stripFrontmatter } from "./utils/frontmatter.js";

@@ -3,7 +3,9 @@
 ## Purpose
 This repository is the current reference implementation of `popper-agent`: a local-first, multi-surface AI agent platform that can receive messages, route them through agent sessions, invoke tools, and respond across connected clients and channels.
 
-The codebase currently reflects the structure and capabilities of the OpenClaw project it is derived from, but for OpenSpec work it should be treated as the evolving implementation of `popper-agent`. That means specifications should describe intended behavior and architecture at the time of writing, not assume current features are permanent. Some, or most, features may change substantially as the project evolves.
+The codebase currently reflects the structure and capabilities of the OpenClaw project it is derived from, but for reffyspec work it should be treated as the evolving implementation of `popper-agent`. That means specifications should describe intended behavior and architecture at the time of writing, not assume current features are permanent. Some, or most, features may change substantially as the project evolves.
+
+For this fork, the immediate product priority is the `pppr` CLI harness. Inherited `pi` monorepo surfaces that do not directly contribute to building, running, or validating the `pppr` CLI should not block `pppr` planning or implementation work by default.
 
 Primary goals:
 - Provide a practical end-to-end agent runtime, not just isolated demos.
@@ -72,6 +74,7 @@ Because this repo is a reference implementation, domain assumptions should stay 
 - New work should preserve extension boundaries: plugin-only dependencies belong in the relevant extension package, not automatically in the root package.
 - Changes to shared messaging/routing logic must account for both core and extension channels.
 - Avoid speculative permanence in specs; this project is still evolving and large portions of behavior may change.
+- For this fork, validation and implementation priorities should favor the `pppr` CLI path. Unrelated inherited packages or surfaces should only be treated as blocking when they directly affect the CLI runtime, its reusable core dependencies, or the repo policies explicitly retained for this fork.
 
 ## External Dependencies
 - Messaging/channel providers and platform-specific integrations used by core and extensions.

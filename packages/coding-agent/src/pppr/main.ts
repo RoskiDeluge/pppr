@@ -16,6 +16,7 @@ import { allTools } from "../core/tools/index.js";
 import { type PpprArgs, parsePpprArgs, printPpprHelp } from "./args.js";
 import { getPpprAgentDir } from "./config.js";
 import { PPPR_SYSTEM_PROMPT } from "./system-prompt.js";
+import { resolvePpprVisibleToolContract } from "./visible-contract.js";
 
 async function readPipedStdin(): Promise<string | undefined> {
 	if (process.stdin.isTTY) {
@@ -224,11 +225,8 @@ export async function main(args: string[]): Promise<void> {
 	}
 
 	const sessionManager = createSessionManager(parsed, cwd, agentDir);
-	const toolList = parsed.noTools
-		? (parsed.tools ?? []).map((name) => allTools[name])
-		: parsed.tools
-			? parsed.tools.map((name) => allTools[name])
-			: undefined;
+	const visibleToolContract = resolvePpprVisibleToolContract(parsed.tools, parsed.noTools);
+	const toolList = visibleToolContract.map((name) => allTools[name]);
 
 	if (parsed.apiKey && resolvedModel) {
 		authStorage.setRuntimeApiKey(resolvedModel.provider, parsed.apiKey);

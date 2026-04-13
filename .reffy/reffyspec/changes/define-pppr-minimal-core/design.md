@@ -17,34 +17,74 @@ That means the spec should bias toward:
 And it should resist:
 
 - carrying over optional UX/product layers just because they already exist
-- introducing abstractions motivated primarily by future host runtimes
+- introducing abstractions that are not needed to preserve real runtime boundaries
 - treating compatibility with every current `pi` feature as success criteria
 
 ## Minimal architecture boundary
 
 The spec should define `pppr` as two closely related layers:
 
-- a harness core responsible for model interaction, tool execution, context loading, and session/event state
-- a CLI surface responsible for user interaction and streaming output
+- a host-neutral core responsible for model-visible state, context construction, effect planning, and session/event state
+- a first host surface responsible for user interaction, local capability fulfillment, and output rendering
 
-This keeps the design simple while leaving a clean seam for future embedding in other operator-controlled runtimes.
+This keeps the design simple while preventing the CLI from becoming the conceptual root of the architecture.
 
-## Why CLI-first matters
+## Why the CLI is no longer the architectural center
 
-The CLI is not just one delivery channel among many. For `pppr`, it is the primary operational environment and the place where the simplicity thesis is easiest to preserve.
+The CLI remains a valid and likely first operational environment. It is still the easiest place to ship an MVP and preserve operator control.
 
-CLI-first implies:
+But the terminal should no longer define the architecture.
 
-- the terminal remains the native environment rather than something to abstract away
-- shell outputs stay visible
-- long-running or advanced workflows should prefer external host tools like `tmux` over built-in process orchestration
+The important constraints are:
 
-## Why future runtimes are deferred
+- the visible contract stays small
+- shell outputs stay visible in the first host
+- long-running or advanced workflows should still prefer external host tools like `tmux` over built-in process orchestration
+- host effects remain explicit rather than baked into the core
 
-The custom Rust shell and Tauri terminal matter strategically, but making them central in v1 would create premature architectural pressure:
+## Why host-neutrality matters now
 
-- transport abstractions may become more general than needed
-- event models may become overdesigned before the core is proven
-- product decisions may optimize for embedding before the standalone harness is coherent
+Deferring host-neutrality until after a CLI implementation would recreate the central mistake this pivot is trying to avoid. If direct terminal and shell behavior are wired into the core first, later extraction becomes a refactor instead of a design property.
 
-The better constraint is simpler: build a stable core and CLI now, then let future runtimes adapt to that seam.
+The right constraint is narrower:
+
+- define the smallest host-neutral core that can support the MVP
+- build the CLI as the first concrete host on top of that core
+- avoid adding extra hosts or framework layers until the core seam is proven
+
+## First-host interaction model
+
+The first host is expected to remain operationally simple.
+
+The interaction model should be:
+
+- accept a user request in a local interactive session
+- resolve the effective instruction context
+- run the core until it emits output, requests host work, or reaches a stop condition
+- fulfill requested host work locally and feed results back into the core
+- stream user-visible progress and outputs without hiding tool activity behind opaque orchestration
+
+This preserves the practical strengths of the CLI environment without allowing terminal mechanics to define core semantics.
+
+## Minimal implementation seams to preserve
+
+Later implementation work should preserve at least these seams:
+
+- a core state boundary that can be serialized and resumed
+- an input/output event boundary that does not assume terminal rendering
+- an effect request/result boundary for host work
+- an instruction-loading boundary that allows local project guidance to be applied without coupling it to one host
+- an observability boundary that records enough session and tool activity for inspection and replay-oriented tooling
+
+These seams are intentionally narrow. They are not a mandate to build a large framework.
+
+## Relationship to phased MVP planning
+
+This change defines the baseline product boundary.
+
+The separate `phase-pppr-host-neutral-mvp` change defines implementation sequencing on top of that boundary:
+
+- this change answers what `pppr` is and is not
+- the phased plan answers what should be built first, second, and later
+
+The two changes should stay aligned, but this change remains the normative baseline for MVP scope.
