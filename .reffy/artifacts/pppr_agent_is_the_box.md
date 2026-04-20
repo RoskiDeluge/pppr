@@ -54,6 +54,7 @@ The phrase "the agent is the box" is a useful shorthand for the architectural mo
 - the unit of execution is the agent runtime
 - the machine is only one possible substrate
 - persistence, observability, model access, command execution, and capability access are all host-mediated resources around that runtime
+<!-- WebMCP, for instance, is a move in this direction. Agentic tool affordances will become native to the web platform, which means that any agent navigating a website will be able to interact with the website and its data through tools. This style of interaction already puts tool management in the broader web host environment. -->
 
 More precisely:
 

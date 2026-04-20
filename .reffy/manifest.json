@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-03-08T19:28:48.864Z",
-  "updated_at": "2026-04-12T21:55:05.786Z",
+  "updated_at": "2026-04-17T23:38:21.734Z",
   "artifacts": [
     {
       "id": "aa94edf8-d92c-4334-840d-eef5693cae08",
@@ -113,10 +113,21 @@
       "filename": "pppr_agent_is_the_box.md",
       "kind": "note",
       "mime_type": "text/markdown",
-      "size_bytes": 3924,
+      "size_bytes": 4259,
       "tags": [],
       "created_at": "2026-04-12T21:55:05.779Z",
-      "updated_at": "2026-04-12T21:55:05.779Z"
+      "updated_at": "2026-04-14T08:00:28.187Z"
+    },
+    {
+      "id": "25caed2e-53e0-463d-8707-1662d6699e25",
+      "name": "pppr_state_of_the_union",
+      "filename": "pppr_state_of_the_union.md",
+      "kind": "note",
+      "mime_type": "text/markdown",
+      "size_bytes": 3877,
+      "tags": [],
+      "created_at": "2026-04-17T23:38:16.452Z",
+      "updated_at": "2026-04-17T23:38:16.452Z"
     }
   ]
 }
