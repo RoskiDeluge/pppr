@@ -36,3 +36,6 @@ todo.md
 
 # vendors
 .vendor/
+
+#reffy
+.reffy/state/
