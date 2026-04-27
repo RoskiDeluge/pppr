@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-03-08T19:28:48.864Z",
-  "updated_at": "2026-04-27T22:48:49.531Z",
+  "updated_at": "2026-04-27T22:56:10.250Z",
   "project_id": "pppr",
   "workspace_ids": [
     "pppr",
@@ -17,7 +17,16 @@
       "size_bytes": 41191,
       "tags": [],
       "created_at": "2026-03-08T19:29:45.204Z",
-      "updated_at": "2026-03-08T19:29:45.204Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "82463b3e-eacf-42ba-831e-81a14a329fb0",
@@ -28,7 +37,16 @@
       "size_bytes": 9181,
       "tags": [],
       "created_at": "2026-04-01T01:16:35.593Z",
-      "updated_at": "2026-04-01T01:26:53.978Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "fbdb9d20-a789-4217-bb0f-8a1ecea8853e",
@@ -39,7 +57,16 @@
       "size_bytes": 9515,
       "tags": [],
       "created_at": "2026-04-07T07:13:45.086Z",
-      "updated_at": "2026-04-07T07:13:45.086Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "0976aa51-5779-4df5-84d4-77593e183ce4",
@@ -50,7 +77,16 @@
       "size_bytes": 3277,
       "tags": [],
       "created_at": "2026-04-07T20:45:07.914Z",
-      "updated_at": "2026-04-07T20:45:07.914Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "d684a632-19ea-4fa1-a32c-2bcee758803b",
@@ -61,11 +97,12 @@
       "size_bytes": 5425,
       "tags": [],
       "created_at": "2026-04-12T07:03:43.489Z",
-      "updated_at": "2026-04-27T22:48:49.531Z",
+      "updated_at": "2026-04-27T22:56:10.250Z",
       "related_changes": [
         "phase-pppr-host-neutral-mvp",
         "define-pppr-runtime-protocol",
-        "implement-pppr-phase1-runtime"
+        "implement-pppr-phase1-runtime",
+        "deprecate-host-neutral-mvp-direction"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-phase-pppr-host-neutral-mvp/proposal.md",
@@ -79,7 +116,11 @@
         ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/design.md",
-        ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/specs/implement-pppr-phase1-runtime/spec.md"
+        ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/specs/implement-pppr-phase1-runtime/spec.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
       ]
     },
     {
@@ -91,11 +132,12 @@
       "size_bytes": 6947,
       "tags": [],
       "created_at": "2026-04-12T07:03:43.495Z",
-      "updated_at": "2026-04-27T22:48:49.531Z",
+      "updated_at": "2026-04-27T22:56:10.250Z",
       "related_changes": [
         "phase-pppr-host-neutral-mvp",
         "define-pppr-runtime-protocol",
-        "implement-pppr-phase1-runtime"
+        "implement-pppr-phase1-runtime",
+        "deprecate-host-neutral-mvp-direction"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-phase-pppr-host-neutral-mvp/proposal.md",
@@ -109,7 +151,11 @@
         ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/design.md",
-        ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/specs/implement-pppr-phase1-runtime/spec.md"
+        ".reffy/reffyspec/changes/archive/2026-04-27-implement-pppr-phase1-runtime/specs/implement-pppr-phase1-runtime/spec.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
       ]
     },
     {
@@ -121,7 +167,16 @@
       "size_bytes": 4259,
       "tags": [],
       "created_at": "2026-04-12T21:55:05.779Z",
-      "updated_at": "2026-04-14T08:00:28.187Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "25caed2e-53e0-463d-8707-1662d6699e25",
@@ -132,7 +187,16 @@
       "size_bytes": 3877,
       "tags": [],
       "created_at": "2026-04-17T23:38:16.452Z",
-      "updated_at": "2026-04-17T23:38:16.452Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "34fa6e86-29d6-41b6-b1fa-56e9c8ca9ce4",
@@ -143,7 +207,16 @@
       "size_bytes": 2472,
       "tags": [],
       "created_at": "2026-04-27T20:50:07.018Z",
-      "updated_at": "2026-04-27T20:50:07.018Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     },
     {
       "id": "94104a49-7181-4caf-bbb6-ba41790bac1f",
@@ -154,7 +227,16 @@
       "size_bytes": 7582,
       "tags": [],
       "created_at": "2026-04-27T22:19:47.519Z",
-      "updated_at": "2026-04-27T22:23:54.182Z"
+      "updated_at": "2026-04-27T22:56:10.250Z",
+      "related_changes": [
+        "deprecate-host-neutral-mvp-direction"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
+        ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+      ]
     }
   ]
 }
