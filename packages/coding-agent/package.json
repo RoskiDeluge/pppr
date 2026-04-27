@@ -18,6 +18,10 @@
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js"
 		},
+		"./pppr": {
+			"types": "./dist/pppr/ir.d.ts",
+			"import": "./dist/pppr/ir.js"
+		},
 		"./hooks": {
 			"types": "./dist/core/hooks/index.d.ts",
 			"import": "./dist/core/hooks/index.js"
@@ -44,6 +48,7 @@
 		"@mariozechner/pi-agent-core": "^0.57.1",
 		"@mariozechner/pi-ai": "^0.57.1",
 		"@mariozechner/pi-tui": "^0.57.1",
+		"pppr": "^0.0.3",
 		"@silvia-odwyer/photon-node": "^0.3.4",
 		"chalk": "^5.5.0",
 		"cli-highlight": "^2.1.11",

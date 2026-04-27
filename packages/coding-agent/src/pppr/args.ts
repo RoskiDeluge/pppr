@@ -1,7 +1,7 @@
-import type { ThinkingLevel } from "@mariozechner/pi-agent-core";
 import chalk from "chalk";
 import { allTools, type ToolName } from "../core/tools/index.js";
 import { PPPR_APP_NAME, PPPR_CONFIG_DIR_NAME, PPPR_ENV_AGENT_DIR } from "./config.js";
+import { isPpprThinkingLevel, PPPR_THINKING_LEVELS, type PpprThinkingLevel } from "./thinking.js";
 
 export type PpprMode = "text" | "json";
 
@@ -11,7 +11,7 @@ export interface PpprArgs {
 	apiKey?: string;
 	systemPrompt?: string;
 	appendSystemPrompt?: string;
-	thinking?: ThinkingLevel;
+	thinking?: PpprThinkingLevel;
 	continue?: boolean;
 	help?: boolean;
 	version?: boolean;
@@ -26,10 +26,8 @@ export interface PpprArgs {
 	fileArgs: string[];
 }
 
-const VALID_THINKING_LEVELS = ["off", "minimal", "low", "medium", "high", "xhigh"] as const;
-
-export function isValidPpprThinkingLevel(level: string): level is ThinkingLevel {
-	return VALID_THINKING_LEVELS.includes(level as ThinkingLevel);
+export function isValidPpprThinkingLevel(level: string): level is PpprThinkingLevel {
+	return isPpprThinkingLevel(level);
 }
 
 export function parsePpprArgs(args: string[]): PpprArgs {
@@ -62,7 +60,7 @@ export function parsePpprArgs(args: string[]): PpprArgs {
 			} else {
 				console.error(
 					chalk.yellow(
-						`Warning: Invalid thinking level "${level}". Valid values: ${VALID_THINKING_LEVELS.join(", ")}`,
+						`Warning: Invalid thinking level "${level}". Valid values: ${PPPR_THINKING_LEVELS.join(", ")}`,
 					),
 				);
 			}
@@ -126,7 +124,7 @@ ${chalk.bold("Options:")}
   --no-session                   Ephemeral mode
   --no-tools                     Disable all built-in tools
   --tools <tools>                Comma-separated tools (default: read,bash,edit,write)
-  --thinking <level>             off, minimal, low, medium, high, xhigh
+  --thinking <level>             ${PPPR_THINKING_LEVELS.join(", ")}
   --help, -h                     Show help
   --version, -v                  Show version
 

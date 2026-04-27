@@ -398,6 +398,7 @@ export {
 	createPpprPolicyMetadata,
 	evaluatePpprEffectPolicy,
 } from "./pppr/effect-policy.js";
+export * from "./pppr/ir.js";
 export type {
 	CreateLocalPpprCapabilityProvidersOptions,
 	PpprStructuredPatchDocument,

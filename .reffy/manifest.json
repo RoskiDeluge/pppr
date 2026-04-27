@@ -1,9 +1,12 @@
 {
   "version": 1,
   "created_at": "2026-03-08T19:28:48.864Z",
-  "updated_at": "2026-04-20T00:54:03.579Z",
+  "updated_at": "2026-04-27T22:24:04.349Z",
   "project_id": "pppr",
-  "workspace_name": "pppr",
+  "workspace_ids": [
+    "pppr",
+    "nuveris-v1"
+  ],
   "artifacts": [
     {
       "id": "aa94edf8-d92c-4334-840d-eef5693cae08",
@@ -130,6 +133,28 @@
       "tags": [],
       "created_at": "2026-04-17T23:38:16.452Z",
       "updated_at": "2026-04-17T23:38:16.452Z"
+    },
+    {
+      "id": "34fa6e86-29d6-41b6-b1fa-56e9c8ca9ce4",
+      "name": "pppr_as_intermediate_representation",
+      "filename": "pppr_as_intermediate_representation.md",
+      "kind": "note",
+      "mime_type": "text/markdown",
+      "size_bytes": 2472,
+      "tags": [],
+      "created_at": "2026-04-27T20:50:07.018Z",
+      "updated_at": "2026-04-27T20:50:07.018Z"
+    },
+    {
+      "id": "94104a49-7181-4caf-bbb6-ba41790bac1f",
+      "name": "pppr_pi_surface_audit",
+      "filename": "pppr_pi_surface_audit.md",
+      "kind": "note",
+      "mime_type": "text/markdown",
+      "size_bytes": 7582,
+      "tags": [],
+      "created_at": "2026-04-27T22:19:47.519Z",
+      "updated_at": "2026-04-27T22:23:54.182Z"
     }
   ]
 }
