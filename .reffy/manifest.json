@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created_at": "2026-03-08T19:28:48.864Z",
-  "updated_at": "2026-04-27T22:56:10.250Z",
+  "updated_at": "2026-04-28T01:05:23.417Z",
   "project_id": "pppr",
   "workspace_ids": [
     "pppr",
@@ -17,15 +17,25 @@
       "size_bytes": 41191,
       "tags": [],
       "created_at": "2026-03-08T19:29:45.204Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -37,15 +47,25 @@
       "size_bytes": 9181,
       "tags": [],
       "created_at": "2026-04-01T01:16:35.593Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -57,15 +77,25 @@
       "size_bytes": 9515,
       "tags": [],
       "created_at": "2026-04-07T07:13:45.086Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -77,15 +107,25 @@
       "size_bytes": 3277,
       "tags": [],
       "created_at": "2026-04-07T20:45:07.914Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -97,12 +137,14 @@
       "size_bytes": 5425,
       "tags": [],
       "created_at": "2026-04-12T07:03:43.489Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
         "phase-pppr-host-neutral-mvp",
         "define-pppr-runtime-protocol",
         "implement-pppr-phase1-runtime",
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-phase-pppr-host-neutral-mvp/proposal.md",
@@ -120,7 +162,15 @@
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -132,12 +182,14 @@
       "size_bytes": 6947,
       "tags": [],
       "created_at": "2026-04-12T07:03:43.495Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
         "phase-pppr-host-neutral-mvp",
         "define-pppr-runtime-protocol",
         "implement-pppr-phase1-runtime",
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-phase-pppr-host-neutral-mvp/proposal.md",
@@ -155,7 +207,15 @@
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -167,15 +227,25 @@
       "size_bytes": 4259,
       "tags": [],
       "created_at": "2026-04-12T21:55:05.779Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -187,15 +257,25 @@
       "size_bytes": 3877,
       "tags": [],
       "created_at": "2026-04-17T23:38:16.452Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -207,15 +287,25 @@
       "size_bytes": 2472,
       "tags": [],
       "created_at": "2026-04-27T20:50:07.018Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     },
     {
@@ -227,15 +317,50 @@
       "size_bytes": 7582,
       "tags": [],
       "created_at": "2026-04-27T22:19:47.519Z",
-      "updated_at": "2026-04-27T22:56:10.250Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
       "related_changes": [
-        "deprecate-host-neutral-mvp-direction"
+        "deprecate-host-neutral-mvp-direction",
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
       ],
       "derived_outputs": [
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/proposal.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/tasks.md",
         ".reffy/reffyspec/changes/archive/2026-04-27-deprecate-host-neutral-mvp-direction/design.md",
-        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md"
+        ".reffy/reffyspec/changes/deprecate-host-neutral-mvp-direction/specs/deprecate-host-neutral-mvp-direction/spec.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
+      ]
+    },
+    {
+      "id": "171aac2e-5e2c-4a23-a154-9d4ba8e54400",
+      "name": "pppr_next_steps_toward_true_ir",
+      "filename": "pppr_next_steps_toward_true_ir.md",
+      "kind": "note",
+      "mime_type": "text/markdown",
+      "size_bytes": 9250,
+      "tags": [],
+      "created_at": "2026-04-27T23:10:05.647Z",
+      "updated_at": "2026-04-28T01:05:23.417Z",
+      "related_changes": [
+        "document-pppr-protocol-spec",
+        "version-pppr-snapshots"
+      ],
+      "derived_outputs": [
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/proposal.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/tasks.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/design.md",
+        ".reffy/reffyspec/changes/document-pppr-protocol-spec/specs/document-pppr-protocol-spec/spec.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/proposal.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/tasks.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/design.md",
+        ".reffy/reffyspec/changes/version-pppr-snapshots/specs/version-pppr-snapshots/spec.md"
       ]
     }
   ]
