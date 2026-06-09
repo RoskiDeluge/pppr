@@ -1,5 +1,7 @@
 # Proposal: document the `pppr` protocol specification
 
+> Superseded notice: This proposal is being archived as superseded by `reframe-pppr-as-sans-io-harness`. The protocol-spec work landed, but the newer change replaces this proposal's framing by making `PROTOCOL.md` the binding sans-I/O contract and by naming Paseo as the first runtime adapter.
+
 ## Why
 
 `packages/pppr` is now the canonical home for `pppr` code, but the protocol it implements is unspecified except by the source itself. As long as there is only one consumer (`legacy-pi-host`), that is tolerable. Before any second consumer arrives — or any non-trivial refactor of the IR — the protocol needs to exist as prose so divergence between intended semantics and current code becomes a visible bug rather than a private worry.

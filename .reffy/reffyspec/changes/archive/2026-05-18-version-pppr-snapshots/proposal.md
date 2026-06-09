@@ -1,5 +1,7 @@
 # Proposal: version `pppr` snapshots
 
+> Superseded notice: This proposal is being archived as superseded by `reframe-pppr-as-sans-io-harness`. Snapshot versioning remains valid follow-up work, but this standalone proposal is no longer the active framing for the current planning set.
+
 ## Why
 
 `PROTOCOL.md` §5.4 and §5.5 are explicit: snapshots have no version field today, and there is no rule for what a runtime accepts, rejects, or migrates. The implicit guarantee is "this snapshot can be restored by the same `packages/pppr` build that produced it." That is fine while there is one consumer in one process and no persistence outside that process.

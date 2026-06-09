@@ -48,7 +48,7 @@ Expected impact:
 ## Follow-up work (out of scope here, listed for traceability)
 
 1. `evict-ambient-io-from-pppr-core` — remove `node:crypto`, `Date.now`, `randomUUID` from the core; introduce the capability bag or relocate envelope construction to the adapter.
-2. `paseo-runtime-adapter` — first concrete sans-I/O host adapter, targeting the Paseo Cloudflare-backed runtime inside `nuveris-v1`.
+2. `paseo-runtime-adapter` — first concrete sans-I/O host adapter, targeting the Paseo Cloudflare-backed runtime.
 
 ## Reffy References
 

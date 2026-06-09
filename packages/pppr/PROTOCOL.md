@@ -4,7 +4,7 @@
 
 ### What this document is
 
-This document describes the `pppr` protocol as it exists today inside `packages/pppr`. It names:
+This document specifies the `pppr` protocol for the core runtime inside `packages/pppr`. It names:
 
 - the lifecycle states the runtime occupies and the legal transitions between them
 - the input event vocabulary the runtime accepts
@@ -12,23 +12,33 @@ This document describes the `pppr` protocol as it exists today inside `packages/
 - the effect request and effect result contract
 - the snapshot shape and what it guarantees on round-trip
 
+### Sans-I/O invariant
+
+This document's binding architectural rule is that the `pppr` core is **sans-I/O**.
+
+That means the core owns structured state transitions, inputs, outputs, effects, and snapshots, but it MUST NOT own platform I/O. The core MUST NOT import platform modules such as `node:*` or `cloudflare:*`, MUST NOT call ambient globals such as `fetch`, `setTimeout`, `crypto.randomUUID`, or `Date.now()` to drive protocol behavior, and MUST receive identity and time as inputs supplied by a host adapter.
+
+Hosts and runtime adapters sit outside the core. They supply time, identity, persistence, model access, command execution, log handling, and any other environmental capability, then fulfill the effect requests defined in this document. **Paseo** is the first concrete runtime adapter expected to exercise this contract; `legacy-pi-host` is one adapter among others, not the protocol's defining consumer.
+
 ### What this document is *not*
 
-It is not a redesign. It is not a forward-looking specification. It does not promise stability across versions of `packages/pppr`.
+It is not a redesign note, an adapter implementation guide, or a license to preserve behavior that conflicts with the protocol contract. It does not, by itself, promise cross-version stability across `packages/pppr`; versioning remains separate follow-up work.
 
-It describes the **current** IR, which was extracted from the needs of one consumer (`legacy-pi-host`). Where prose and code disagree, the disagreement is a bug to be filed — see the **Open ambiguities** section at the end. Disagreements MUST NOT be resolved by silently editing source code under `packages/pppr/src/` as part of writing this document; they are recorded and deferred.
+The current implementation was extracted from the needs of `legacy-pi-host`, and some code paths still reflect that history. Where prose and code disagree, the disagreement is a code bug to be filed against the implementation — see the **Open ambiguities** section at the end. Disagreements MUST NOT be resolved by silently editing source code under `packages/pppr/src/` as part of writing this document; they are recorded and deferred.
 
-The larger arc this document fits into is `pppr_next_steps_toward_true_ir.md`. This document is step 1 of that arc. Step 2 (snapshot/protocol versioning) and step 3 (driving the IR from a structurally different harness) are explicitly future work — until those happen, none of the guarantees here should be assumed to hold across `packages/pppr` versions or across multiple consumers.
+The larger arc this document fits into is `pppr_next_steps_toward_true_ir.md`. Snapshot/protocol versioning remains future work, and the Paseo runtime adapter is the first planned structurally different driver that will exercise whether this contract is clean in practice.
 
 ### How to use this document
 
 If you are trying to understand what a `pppr` session looks like in motion, read sections 1–3 in order. If you are trying to fulfill effects from a host, read section 4. If you are trying to persist or resume sessions, read section 5.
 
-If you find that this document and the source code disagree, the disagreement is the artifact. File it; do not invent a resolution.
+If you find that this document and the source code disagree, file the disagreement as a code bug against `packages/pppr`; do not invent a silent local resolution.
 
 ### Source of truth
 
-For now, `packages/pppr/src/runtime-protocol.ts` and `packages/pppr/src/runtime.ts` are the source of truth. This document is authoritative for *intent* but not for *behavior*. That asymmetry is itself a property of the current IR and is one of the things step 6 of the next-steps arc (IR-level invariant tests) is meant to close.
+`PROTOCOL.md` is the binding contract for the `pppr` core.
+
+`packages/pppr/src/runtime-protocol.ts`, `packages/pppr/src/runtime.ts`, and related helpers are implementations of this contract. If they disagree with this document, the implementation is wrong and the disagreement should be filed and fixed as a code bug. The contract is allowed to be stricter than the current implementation while follow-up work closes the gap.
 
 ---
 
@@ -105,6 +115,7 @@ interface PpprEventEnvelope<K, TPayload> {
 ```
 
 `createPpprInputEvent` constructs envelopes; `id` defaults to `randomUUID()`, `timestamp` to `Date.now()`.
+The protocol contract, however, is that identity and time are supplied by the caller or adapter. Any implementation path that self-sources them inside the core is a sans-I/O violation and should be treated as a bug against this document.
 
 ### 2.2 `session.start`
 
@@ -312,7 +323,7 @@ The runtime defines exactly eight effect kinds today:
 | `log.append`      | Host appends entries to an observability log.                   |
 | `log.resolve`     | Host resolves prior log entries (replay/inspect/resume).        |
 
-These names are **inherited from the legacy host** and are out of scope for renaming in this change. They are protocol nouns today, but they have not yet been validated by a structurally different harness, so their cleanliness is a working assumption rather than a confirmed property.
+These names are owned by the core's effect contract, regardless of where earlier implementations first used them. Renaming them remains out of scope for this change, but they are protocol nouns now, not borrowed labels that belong to `legacy-pi-host`. The Paseo runtime adapter is the first planned structurally different driver that will exercise whether these names are clean enough as protocol vocabulary.
 
 ### 4.2 Request shape
 
@@ -329,6 +340,7 @@ interface PpprEffectRequest<K extends PpprEffectKind = PpprEffectKind> {
 ```
 
 `createPpprEffectRequest` and the per-kind helpers (`createPpprContentReadRequest` etc.) construct requests with default `id` (`randomUUID()`) and `requested_at` (`Date.now()`).
+Under the sans-I/O contract, those values belong at the adapter boundary. Any helper path that still self-sources them inside the core is an implementation bug against this document rather than a normative property of the protocol.
 
 The per-kind payload shapes are defined in `runtime-protocol.ts` and intentionally not duplicated here. See `PpprEffectRequestPayloadMap` for the authoritative list.
 
@@ -423,7 +435,7 @@ A snapshot that was produced by an older `packages/pppr` and loaded by a newer o
 
 ## 6. Open ambiguities
 
-These are places where writing this document forced a question the source code does not clearly answer. They are recorded here, not resolved. Each entry is fair game for follow-up work — and most of them are most cleanly answered by step 3 of the next-steps arc (driving the IR from a structurally different harness), since several are visible only as "the current single consumer happens not to need this."
+These are protocol-design questions that remain open after writing this document. They are recorded here, not resolved. Each entry is fair game for follow-up work, and many of them are expected to become sharper once the Paseo runtime adapter exercises the contract from outside the legacy CLI shape. This section names unanswered questions; it does not answer them.
 
 ### 6.1 Unused `PpprStatusChangeReason` values
 
@@ -510,4 +522,4 @@ The behavior is correct given the IR's intent (snapshots should not carry host-p
 
 ---
 
-*End of `pppr` Protocol Specification (current IR, step 1 of `pppr_next_steps_toward_true_ir.md`).*
+*End of `pppr` Protocol Specification (binding contract for the sans-I/O core; the Paseo runtime adapter is the first planned external driver of this surface).*
