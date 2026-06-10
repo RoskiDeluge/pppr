@@ -198,7 +198,13 @@ Applications became deployments.
 
 Similarly:
 
-Data may become a deployment artifact.
+Data may become telemetry.
+
+Applications may become projections.
+
+The business itself may become the deployment.
+
+When a Logical Assembly changes, the organization is not merely updating documentation, schemas, or software. It is changing the structure from which roles, workflows, policies, evaluations, automations, and customer experiences can be instantiated.
 
 Logical Assemblies may become the source code of organizational meaning.
 
@@ -303,4 +309,3 @@ It may be the structure through which an organization understands itself.
 The organizations that successfully encode that understanding into durable Logical Assemblies may discover that they are not merely building better AI systems.
 
 They are building persistent consequence.
-
